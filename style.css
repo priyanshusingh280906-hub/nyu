@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("photo5.jpeg") no-repeat center center/cover;
+    overflow: hidden;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 0;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    max-width: 380px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.45);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.card h1 {
+    color: #e84393;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+}
+
+.card img {
+    width: 100%;
+    max-width: 260px;
+    margin: 15px auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#wish-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px 0;
+}
+
+.from {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.from span {
+    color: #e84393;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #e84393;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d63076;
+}
+
+/* Canvas */
+#hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
